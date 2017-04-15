@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: #c9dcc6;
+	background: $green;
   font: 18px/1.4 $slab;
 }
 
@@ -142,7 +142,7 @@ img {
 .content {
   margin: 0 auto;
   padding: 27px;
-  background: white;
+  background: $white;
 }
 
 //
@@ -152,7 +152,7 @@ img {
 .masthead {
   padding: 0 0 24px;
   margin: 0 0 50px;
-  border-bottom: 3px solid #eee;
+  border-bottom: 3px solid $lightGray;
   text-align: center;
   display: block;
 }
@@ -165,7 +165,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: #666;
+  color: $gray;
   cursor: pointer;
   font-size: 27px;
   line-height: 27px;
@@ -173,7 +173,7 @@ img {
 
 .site-description {
   margin: 14px auto;
-  color: #999;
+  color: $midGray;
   text-align: center;
   font-size: 16px;
   font-weight: 300;
@@ -189,7 +189,7 @@ nav {
   padding-top: 24px;
   font-family: $slab;
   font-size: 12px;
-  border-top: 3px solid #eee;
+  border-top: 3px solid $lightGray;
   text-align: center;
   line-height: 25.5px;
 
@@ -198,13 +198,13 @@ nav {
     padding: 14px 0 14px;
     text-decoration: none;
     margin-right: 20px;
-    color: #999;
+    color: $midGray;
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
   a:visited {
-    color: #1c7c7c;
+    color: $blue;
   }
 }
 
@@ -241,7 +241,7 @@ nav {
     line-height: 2.09231em;
     margin: 0 0 27px;
     letter-spacing: 1px;
-    color: #999;
+    color: $midGray;
   }
 
   .read-more {
@@ -254,17 +254,17 @@ nav {
   font-size: 1.75em;
   line-height: 1.2em;
   margin: 0 0 7px;
-  color: #666;
+  color: $gray;
 }
 .entry {
   font-size: 100%;
-  color: #666;
+  color: $gray;
 }
 
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 3px solid #eee;
+  border-top: 3px solid $lightGray;
 }
 
 footer {
