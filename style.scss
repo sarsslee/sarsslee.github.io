@@ -1,0 +1,286 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+html {
+  font-size: 100%;
+}
+
+body {
+	background: #c9dcc6;
+  font: 18px/1.4 $slab;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  color: $darkerGray;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: $gray;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $blue;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightGray;
+}
+::selection {
+  color: $black;
+  background: $lightGray;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+.content {
+  margin: 0 auto;
+  padding: 27px;
+  background: white;
+}
+
+//
+// .masthead
+//
+
+.masthead {
+  padding: 0 0 24px;
+  margin: 0 0 50px;
+  border-bottom: 3px solid #eee;
+  text-align: center;
+  display: block;
+}
+
+.site-info {
+  clear: both;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.site-name {
+  margin: 0;
+  color: #666;
+  cursor: pointer;
+  font-size: 27px;
+  line-height: 27px;
+}
+
+.site-description {
+  margin: 14px auto;
+  color: #999;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
+  margin-top: 27px; // @TODO: Vertically middle align
+  padding-top: 24px;
+  font-family: $slab;
+  font-size: 12px;
+  border-top: 3px solid #eee;
+  text-align: center;
+  line-height: 25.5px;
+
+  a {
+    display: block;
+    padding: 14px 0 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: #999;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  a:visited {
+    color: #1c7c7c;
+  }
+}
+
+//
+// .main
+//
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .date {
+    font-size: .75em;
+    line-height: 2.09231em;
+    margin: 0 0 27px;
+    letter-spacing: 1px;
+    color: #999;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.title {
+  font-size: 1.75em;
+  line-height: 1.2em;
+  margin: 0 0 7px;
+  color: #666;
+}
+.entry {
+  font-size: 100%;
+  color: #666;
+}
+
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 3px solid #eee;
+}
+
+footer {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+@media(min-width: 875px) {
+  .content {
+    max-width: 872px;
+    padding: 54px 108px;
+  }
+}
+
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
