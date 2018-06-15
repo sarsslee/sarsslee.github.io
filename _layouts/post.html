@@ -3,10 +3,11 @@ layout: default
 ---
 
 <article class="post">
-  <h1 class="title">{{ page.title }}</h1>
+  <h1 class="full-title">{{ page.title }}</h1>
 
   <div class="date">
-    {{ page.date | date: "%B %e, %Y" }} - {{ site.user | upcase }}
+      <span>{{ site.user }} &middot; {{ page.date | date: "%B %e, %Y" }}</span>
+      <span class="seperator"></span>
   </div>
 
   <div class="entry">

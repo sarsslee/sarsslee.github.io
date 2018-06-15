@@ -64,21 +64,21 @@ html {
 }
 
 body {
-  background: #c9dcc6;
-  font: 18px/1.4 "Roboto Slab", Georgia, Times, serif;
+  font: 18px/1.4 "Roboto", sans-serif;
 }
 
 .container {
   margin: 0 auto;
   max-width: 740px;
   width: 100%;
+  margin-top: 3em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto", sans-serif;
   color: #222;
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0 0 10px;
   padding: 0;
 }
 @media screen and (max-width: 640px) {
@@ -109,16 +109,19 @@ h4 {
 
 p {
   margin: 15px 0;
-  font-size: 1em;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #000;
+  line-height: 1.875;
 }
 
 a {
-  color: #4183C4;
+  color: #1c7c7c;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #4183C4;
+  color: #000;
 }
 
 ul, ol {
@@ -184,29 +187,39 @@ img {
 .content {
   margin: 0 auto;
   padding: 27px;
-  background: white;
+  background: #fff;
+}
+
+.wrapper-masthead {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 8px;
 }
 
 .masthead {
-  padding: 0 0 24px;
-  margin: 0 0 50px;
-  border-bottom: 3px solid #eee;
-  text-align: center;
-  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  background: #fff;
 }
 
 .site-info {
-  clear: both;
-  margin-bottom: 14px;
+  display: flex;
+  flex-flow: row nowrap;
   text-align: center;
 }
 
 .site-name {
-  margin: 0;
-  color: #666;
+  margin: 0 20px;
+  color: #000;
   cursor: pointer;
   font-size: 27px;
   line-height: 27px;
+  text-align: center;
 }
 
 .site-description {
@@ -223,31 +236,28 @@ nav {
   flex-flow: row nowrap;
   align-content: center;
   justify-content: center;
-  margin-top: 27px;
-  padding-top: 24px;
-  font-family: "Roboto Slab", Georgia, Times, serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
-  border-top: 3px solid #eee;
   text-align: center;
   line-height: 25.5px;
 }
 nav a {
-  display: block;
   padding: 14px 0 14px;
   text-decoration: none;
   margin-right: 20px;
-  color: #999;
+  color: #000;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-nav a:visited {
-  color: #1c7c7c;
+nav a:hover {
+  text-decoration: underline;
 }
 
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid #eee;
+  margin-top: 40px;
 }
 
 .posts > .post:last-child {
@@ -267,27 +277,55 @@ nav a:visited {
   margin-top: 10px;
 }
 .post .date {
-  font-size: .75em;
-  line-height: 2.09231em;
-  margin: 0 0 27px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
   letter-spacing: 1px;
-  color: #999;
+  color: #333;
+  text-align: center;
+}
+.post .date span {
+  margin: 0 0 30px;
+}
+.post .date .seperator {
+  width: 15px;
+  height: 1px;
+  border-bottom: 1px solid #000;
+}
+.post .dateline {
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
 }
 .post .read-more {
+  display: inline-block;
   text-transform: uppercase;
   font-size: 15px;
+  font-weight: 300;
+  padding: 16px;
+  background: #000;
+  color: #fff;
+  border-radius: 3px;
 }
 
-.title {
-  font-size: 1.75em;
-  line-height: 1.2em;
-  margin: 0 0 7px;
-  color: #666;
+.title, .full-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+}
+
+.full-title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .entry {
   font-size: 100%;
   color: #666;
+  margin-bottom: 30px;
 }
 
 .wrapper-footer {

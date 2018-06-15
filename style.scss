@@ -18,22 +18,22 @@ html {
 }
 
 body {
-	background: $green;
-  font: 18px/1.4 $slab;
+  font: 18px/1.4 $font;
 }
 
 .container {
   margin: 0 auto;
   max-width: 740px;
   width: 100%;
+  margin-top: 3em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: $font;
   color: $darkerGray;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0 0 10px;
   padding: 0;
 
   @include mobile {
@@ -63,7 +63,10 @@ h4 {
 
 p {
   margin: 15px 0;
-  font-size: 1em;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: $black;
+  line-height: 1.875;
 }
 
 a {
@@ -71,7 +74,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $black;
   }
 }
 
@@ -148,27 +151,37 @@ img {
 //
 // .masthead
 //
+.wrapper-masthead {
+  position: fixed;
+  width: 100%;
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 8px;
+}
 
 .masthead {
-  padding: 0 0 24px;
-  margin: 0 0 50px;
-  border-bottom: 3px solid $lightGray;
-  text-align: center;
-  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  background: #fff;
 }
 
 .site-info {
-  clear: both;
-  margin-bottom: 14px;
+  display: flex;
+  flex-flow: row nowrap;
   text-align: center;
 }
 
 .site-name {
-  margin: 0;
-  color: $gray;
+  margin: 0 20px;
+  color: $black;
   cursor: pointer;
   font-size: 27px;
   line-height: 27px;
+  text-align: center;
 }
 
 .site-description {
@@ -185,26 +198,23 @@ nav {
   flex-flow: row nowrap;
   align-content: center;
   justify-content: center;
-  margin-top: 27px; // @TODO: Vertically middle align
-  padding-top: 24px;
-  font-family: $slab;
+  font-family: $font;
   font-size: 12px;
-  border-top: 3px solid $lightGray;
   text-align: center;
   line-height: 25.5px;
 
   a {
-    display: block;
     padding: 14px 0 14px;
     text-decoration: none;
     margin-right: 20px;
-    color: $midGray;
+    color: $black;
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
-  }
-  a:visited {
-    color: $blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -215,6 +225,7 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+  margin-top: 40px;
 }
 
 .posts > .post:last-child {
@@ -237,28 +248,59 @@ nav {
   }
 
   .date {
-    font-size: .75em;
-    line-height: 2.09231em;
-    margin: 0 0 27px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 300;
+    // margin: 0 0 30px;
     letter-spacing: 1px;
-    color: $midGray;
+    color: $darkGray;
+    text-align: center;
+    
+    span {
+      margin: 0 0 30px;
+    }
+
+    .seperator {
+      width: 15px;
+      height: 1px;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  .dateline {
+    font-size: 16px;
+    font-weight: 300;
+    color: $darkerGray;
   }
 
   .read-more {
+    display: inline-block;
     text-transform: uppercase;
     font-size: 15px;
+    font-weight: 300;
+    padding: 16px;
+    background: $black;
+    color: #fff;
+    border-radius: 3px;
   }
 }
 
-.title {
-  font-size: 1.75em;
-  line-height: 1.2em;
-  margin: 0 0 7px;
-  color: $gray;
+.title, .full-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $black;
+}
+.full-title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 .entry {
   font-size: 100%;
   color: $gray;
+  margin-bottom: 30px;
 }
 
 
