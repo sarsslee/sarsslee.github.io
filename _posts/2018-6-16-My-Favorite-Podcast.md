@@ -2,7 +2,7 @@
 layout: post
 title: My Favorite Podcasts
 ---
-![My favorite podcast]({{ "/images/favorite-podcast.jpg" | absolute_url }})
+<a href="{{ /images/favorite-podcast.jpg" | absolute_url }})
 
 
 
