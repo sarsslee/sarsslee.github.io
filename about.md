@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-letting others see my writing is frightening, but in order to grow as a writer, I must let the world in. This is my attempt.
+Marketing Specialist with experience in proofing, editing and copywriting. 
 
- 
-
-Enjoy.
+ Email: Sarah.elee35@gmail.com
+ Linkedin: www.linkedin.com/in/sarah-lee35
