@@ -4,7 +4,7 @@ title: My Favorite Podcasts
 ---
 
 
-![My helpful screenshot]({{ "sarsslee.github.io/images/favorite-podcast.png" | absolute_url }})
+![My helpful screenshot]({{ "/images/favorite-podcast.png" | absolute_url }})
 
 As a commuting student, I find that I have large amounts of time on my hands where I’m in the car, or I’m walking across campus, or I’m at work. I am a part time content screener, which means I do a lot of tasks for a website that really require little focus and more tasks for the website that take hours to do. As a result, I started listening to a lot of podcasts. As with most podcast listeners, I started listening to podcasts when Serial (from WNYC) first came out, and since then have expanded my podcast listening. While Serial still remains a favorite, I realize that there are other shows I listen to that are just as good. Here are my favorites:
 
