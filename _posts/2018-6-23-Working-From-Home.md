@@ -3,7 +3,7 @@ layout: post
 title: Working From Home
 ---
 
-![My helpful screenshot]({{ "/images/Galore.png" | absolute_url }})
+![Working From Home Image]({{ "/images/Galore.png" | absolute_url }})
 
 I have worked from home for about four years. Two were for a call center and the other two were for a website proofing content. Just to be upfront about this, I don’t think that working from home is for everyone. There are some people who need to be in a space with people and computers and desks, and that is completely fine. I think I’m secretly one of those people, but I still enjoy doing some work from my home office.
 
