@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Working From Home
+date: 2018-6-23
 ---
 
 ![Working From Home Image]({{ "/images/Galore.png" | absolute_url }})
